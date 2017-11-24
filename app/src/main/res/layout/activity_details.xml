@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/b3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,7 +15,7 @@
         android:layout_marginTop="106dp"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/white"
         android:textSize="24dp"
         android:text="Hi, Tell Us about you !"/>
 
@@ -23,9 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="@android:color/white"
         android:layout_marginTop="10dp"
         android:inputType="textPersonName"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/white"
         android:hint="What's your Name ?" />
 
     <EditText
@@ -33,7 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         android:layout_marginTop="10dp"
         android:inputType="number"
         android:hint="Age" />
@@ -44,7 +47,8 @@
         android:layout_height="wrap_content"
         android:textSize="24dp"
         android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         android:text="Gender:" />
 
     <RadioGroup
@@ -66,6 +70,30 @@
         android:text="Female" />
 
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="6dp"
+        android:textColorHint="@android:color/white"
+        android:hint="Price of 12 Cigaretes(1 Packet)"
+        android:textColor="@android:color/white"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:hint="Number of Cigaretes Daily"
+        android:textColor="@android:color/white"
+        android:inputType="number" />
+
+
 
     <Button
         android:id="@+id/buttonSubmit"

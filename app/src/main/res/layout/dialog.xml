@@ -15,24 +15,6 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"/>
 
-    <EditText
-        android:id="@+id/editTextprice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="6dp"
-        android:hint="Price of 12 Cigaretes(1 Packet)"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/editTextnumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="6dp"
-        android:hint="Number of Cigaretes Daily"
-        android:inputType="number" />
-
     <Button
         android:id="@+id/buttondone"
         android:layout_width="match_parent"

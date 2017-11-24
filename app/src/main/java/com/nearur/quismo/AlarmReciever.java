@@ -15,25 +15,18 @@ public class AlarmReciever extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-       if(intent.getAction().equals("a.b.c.d")||intent.getAction().equals("android.intent.action.BOOT_COMPLETED")){
+       if(intent.getAction().equals("quismoeight")||intent.getAction().equals("android.intent.action.BOOT_COMPLETED")){
            Intent i=new Intent(context,NotificationService.class);
-           PendingIntent pendingIntent=PendingIntent.getService(context,101,i,0);
+           PendingIntent pendingIntent=PendingIntent.getService(context,1507567,i,0);
 
            AlarmManager alarmManager=(AlarmManager)context.getSystemService(ALARM_SERVICE);
            Calendar c=Calendar.getInstance();
            c.set(Calendar.HOUR_OF_DAY,20);
            c.set(Calendar.MINUTE,00);
            c.set(Calendar.SECOND,00);
-           Toast.makeText(context,"Alram Set",Toast.LENGTH_LONG).show();
+           Toast.makeText(context,"Alarm Set",Toast.LENGTH_LONG).show();
            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,c.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pendingIntent);
        }
-       if (intent.getAction().equals("a.b.c")){
-           Intent i=new Intent(context,NotificationService.class);
-           PendingIntent pendingIntent=PendingIntent.getService(context,1001,i,0);
-           Toast.makeText(context,"Intent Fired",Toast.LENGTH_LONG).show();
-           AlarmManager alarmManager=(AlarmManager)context.getSystemService(ALARM_SERVICE);
-           Calendar c=Calendar.getInstance();
-           alarmManager.set(AlarmManager.RTC_WAKEUP,c.getTimeInMillis()+30000,pendingIntent);
-       }
+
     }
 }

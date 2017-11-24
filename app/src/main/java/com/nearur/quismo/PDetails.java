@@ -31,8 +31,8 @@ public class PDetails extends Fragment {
         sharedPreferences=getActivity().getSharedPreferences("Quismo", Context.MODE_PRIVATE);
         textView.setText("Hi,"+sharedPreferences.getString("Name","Name"));
         Date d=new Date();
-        SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
-        date.setText(dateFormat.format(d).toString());
+        SimpleDateFormat dateFormat=new SimpleDateFormat("dd,MMM,yyyy");
+        date.setText("Today: "+dateFormat.format(d).toString()+"\nWe Appreciate your effort to quit Smoking.");
         return view;
     }
 

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home2"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="Alarm"
-        app:showAsAction="never" />
+        android:icon="@drawable/alarm"
+        app:showAsAction="always" />
+
+
 </menu>

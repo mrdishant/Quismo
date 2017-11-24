@@ -19,22 +19,22 @@ public class NotificationService extends Service {
         NotificationCompat.Builder builder=new NotificationCompat.Builder(getApplicationContext());
         builder.setContentText("Daily Analysis ");
         builder.setContentTitle("Quismo");
-        builder.setSmallIcon(R.drawable.a);
+        builder.setSmallIcon(R.drawable.daily);
         builder.setDefaults(Notification.DEFAULT_ALL);
 
         Intent i=new Intent(getApplicationContext(),DailyReport.class);
-        PendingIntent pending=PendingIntent.getActivity(getApplicationContext(),7623,i,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pending=PendingIntent.getActivity(getApplicationContext(),1550497623,i,PendingIntent.FLAG_UPDATE_CURRENT);
 
         builder.setContentIntent(pending);
         builder.setAutoCancel(true);
+        builder.setOngoing(true);
         Notification n=builder.build();
-        notificationManager.notify(7623,n);
+        notificationManager.notify(15507623,n);
         return Service.START_STICKY;
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
 }

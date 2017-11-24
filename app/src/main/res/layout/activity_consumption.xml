@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/w"
+    tools:context="com.nearur.quismo.Consumption">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:text="That's Sad"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:text="Please Enter Number Of Cigaretes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minus"
+        android:id="@+id/minus"
+
+        />
+     <TextView
+         android:layout_weight="30"
+         android:layout_width="0dp"
+         android:textAlignment="center"
+         android:textColor="@android:color/white"
+         android:layout_height="wrap_content"
+         android:id="@+id/textnumber"
+         android:textSize="24dp"
+         android:text="0"/>
+
+      <ImageButton
+          android:layout_weight="30"
+          android:layout_width="0dp"
+          android:background="@null"
+          android:layout_height="wrap_content"
+          android:id="@+id/add"
+          android:src="@drawable/plus"/>
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submityes"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        />
+
+</LinearLayout>
